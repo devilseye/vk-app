@@ -8,7 +8,7 @@
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "cross-env cpx ./build/**/* docs"
+    "deploy": "rimraf ./docs && cross-env cpx ./build/**/* docs && git add ./docs"
   },
   "keywords": [],
   "author": "devilseye",
@@ -17,7 +17,8 @@
     "cpx": "^1.5.0",
     "cross-env": "^5.2.1",
     "react-hot-loader": "^4.13.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@vkontakte/icons": "^1.83.0",

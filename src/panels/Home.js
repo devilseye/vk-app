@@ -5,7 +5,7 @@ import {Avatar, Button, Cell, Div, Group, Header, Panel, PanelHeader} from '@vko
 
 const Home = ({id, go, fetchedUser}) => (
     <Panel id={id}>
-        <PanelHeader>Example</PanelHeader>
+        <PanelHeader>VK Mini Test App</PanelHeader>
         {fetchedUser &&
         <Group header={<Header mode="secondary">User Data Fetched with VK Bridge</Header>}>
             <Cell
@@ -16,7 +16,7 @@ const Home = ({id, go, fetchedUser}) => (
             </Cell>
         </Group>}
 
-        <Group header={<Header mode="secondary">Navigation Example</Header>}>
+        <Group header={<Header mode="secondary">Hello there</Header>}>
             <Div>
                 <Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
                     Show me the Persik, please
