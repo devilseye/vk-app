@@ -18,7 +18,7 @@
     "cross-env": "^7.0.3",
     "react-hot-loader": "^4.13.0",
     "react-scripts": "^5.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "@vkontakte/icons": "^2.105.0",
